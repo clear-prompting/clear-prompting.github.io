@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="">
+  <meta name="keywords" content="C.L.E.A.R, Clear, Temporal Understanding">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enhancing Temporal Understanding in LLMs for Semi-structured Tables</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Enhancing Temporal Understanding in LLMs for Semi-structured Tables</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://www.irwin-deng.com/">Irwin Deng</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://kushagradixit.github.io/">Kushagra Dixit</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://vgupta123.github.io/">Vivek Gupta</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.cis.upenn.edu/~danroth/">Dan Roth</a><sup>1</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>University of Pennsylvania</span>
+            <span class="author-block"><sup>2</sup>University of Utah</span>
+            <span class="author-block"><sup>3</sup>Arizona State University</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/google/nerfies"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+              <span class="link-block">
+                <a href="./explore.html"
+                    class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Explore</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="section">
+    <div class="container is-max-desktop">
+      
+      <div class="about-box">
+        <h2 class="title is-3">About</h2>
+        <p>
+          Large Language Models (LLMs) have shown impressive capabilities in natural language processing but struggle with reasoning over tabular data, particularly when temporal relationships are involved. This gap in understanding highlights a critical need for improved methodologies to enhance LLMs' ability to handle structured and semi-structured temporal data effectively.
+        </p>
+        <p>
+          To investigate these challenges, we conducted an in-depth analysis of the TempTabQA dataset, uncovering key issues such as incomplete evidence extraction and reliance on memorization rather than reasoning. This led to the development of C.L.E.A.R (Comprehend, Locate, Examine, Analyze, Resolve) a structured prompting approach designed to improve evidence-based temporal reasoning in LLMs. However, while prompting enhances guidance, it does not inherently improve model understanding.
+        </p>
+        <p>
+          To address this, we explore auxiliary data fine-tuning, leveraging the TRAM dataset to refine model parameters and improve reasoning across different temporal question formats. Our findings demonstrate that integrating C.L.E.A.R with fine-tuning significantly enhances LLMs’ ability to process temporal data, reducing errors and improving generalization. This study advances the field by providing a structured methodology and demonstrating how cross-format training can enhance LLMs' performance on temporal reasoning tasks.
+        </p>
+      </div>
+  
+    </div>
+  </section>
+
+<section class="section blue-back">
+    <div class="container is-max-desktop">
+      
+      <!-- Carousel Wrapper -->
+      <div class="carousel-wrapper">
+        
+        <!-- Slide Container with Fixed Height -->
+        <div class="carousel-slides">
+  
+          <!-- Slide 1: Description -->
+          <div class="carousel-slide active">
+            <div class="content-box">
+              <h2 class="title is-3">C.L.E.A.R Prompting: A Structured Approach to Complex Question Answering</h2>
+              <p>
+                To enhance the accuracy of large language models (LLMs) in handling temporal reasoning over semi-structured data, we introduce the C.L.E.A.R prompting framework. This method systematically reduces errors such as hallucinations, incomplete evidence extraction, and misinterpretations by breaking down the reasoning process into five structured steps:
+              </p>
+              <ul>
+                <li><strong>Comprehend : </strong>Understand the question by applying domain knowledge, correctly interpreting its temporal components, and identifying key details.</li>
+                <li><strong>Locate : </strong>Extract only the relevant rows from the data table, ensuring that all necessary evidence is collected to answer the question accurately.</li>
+                <li><strong>Examine : </strong>Decompose complex queries into manageable sub-questions, making temporal calculations clearer and reducing reasoning errors.</li>
+                <li><strong>Analyze : </strong>Answer each sub-question using extracted evidence, applying logical reasoning and ensuring consistency with the available data.</li>
+                <li><strong>Resolve : </strong>Synthesize the answers from the sub-questions into a final response, ensuring clarity, correctness, and logical coherence.</li>
+              </ul>
+              <p>
+                The C.L.E.A.R approach provides a structured, step-by-step method that improves LLMs’ reasoning capabilities, minimizing common errors and enhancing reliability in complex question answering.
+              </p>
+            </div>
+          </div>
+          
+          <!-- Slide 2: Full-Stretched Image -->
+          <div class="carousel-slide">
+            <div class="image-container">
+              <img src="./static/images/prompt-example.drawio (1).png" alt="C.L.E.A.R Prompting Overview">
+            </div>
+          </div>
+  
+        </div>
+        
+        <!-- Navigation Buttons -->
+        <div class="carousel-nav">
+          <button class="prev-slide">&#10094;</button>
+          <button class="next-slide">&#10095;</button>
+        </div>
+  
+      </div>
+  
+    </div>
+  </section>
+
+  
+
+  <section class="section skin-back">
+    <div class="container is-max-desktop">
+      
+      <div class="content-box-alt">
+        <h2 class="title is-3">How Does C.L.E.A.R Work?</h2>
+        <p>
+            Here is an example where a given table and structured reasoning are used to answer a question through C.L.E.A.R Prompting. This step-by-step approach helps guide the model in the right direction by ensuring proper comprehension, relevant evidence extraction, logical decomposition, and accurate reasoning. The breakdown below demonstrates how each stage of C.L.E.A.R contributes to forming a well-supported final answer.
+        </p>
+      </div>
+  
+      <!-- Image Below Content -->
+      <div class="image-container-alt">
+        <img src="./static/images/merged_image.png" alt="Temporal Reasoning Challenges">
+      </div>
+  
+    </div>
+  </section>
+
+  <!-- Auxiliary Data Fine-Tuning Section -->
+<section class="section green-back">
+    <div class="container is-max-desktop">
+      
+      <!-- Overall Title -->
+      <h2 class="title is-3 section-title">Auxiliary Data Fine-Tuning for Enhanced Temporal Reasoning</h2>
+  
+      <div class="flex-container">
+        
+        <!-- Left Div: Full-Height Image -->
+        <div class="left-div">
+          <img src="./static/images/res.png" alt="Auxiliary Fine-Tuning">
+        </div>
+        
+        <!-- Right Div: Content -->
+        <div class="right-div">
+          <p>
+            Fine-tuning with auxiliary datasets significantly enhances a model’s ability to process temporal information, improving its performance in ordering, frequency, duration, and logical deduction over time-based data. While <b>C.L.E.A.R Prompting</b> provides a structured reasoning approach, intrinsic model improvements require fine-tuning to refine context understanding and evidence-based question answering.
+          </p>
+          <p>
+            Our evaluation demonstrates that fine-tuning with diverse datasets like <b>TRAM</b> and <b>TempTabQA</b> leads to better handling of complex temporal reasoning tasks. Among the datasets tested, <b>TRAM proves especially effective</b> due to its wide range of temporal challenges, helping models generalize across different formats. The results highlight that fine-tuning not only boosts accuracy but also strengthens a model’s ability to process <b>nuanced temporal relationships</b>, making it more reliable across various tasks.
+          </p>
+          <p>
+            By leveraging <b>rich and diverse auxiliary data</b>, fine-tuning provides an adaptable approach that improves reasoning beyond task-specific training, reinforcing the model’s ability to handle complex queries with <b>higher precision and consistency</b>.
+          </p>
+        </div>
+  
+      </div>
+  
+    </div>
+  </section>
+
+</body>
+</html>
